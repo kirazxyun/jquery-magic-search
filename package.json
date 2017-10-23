@@ -1,0 +1,33 @@
+{
+  "name": "jquery-magic-search",
+  "version": "1.0.0",
+  "description": "复杂选择下拉框-jquery插件",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirazxyun/jquery-magic-search.git"
+  },
+  "keywords": [
+    "jquery"
+  ],
+  "author": "kira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kirazxyun/jquery-magic-search/issues"
+  },
+  "homepage": "https://github.com/kirazxyun/jquery-magic-search#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "file-loader": "^1.1.5",
+    "style-loader": "^0.19.0",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.8.1"
+  }
+}

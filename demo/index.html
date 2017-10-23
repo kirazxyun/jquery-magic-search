@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Webpack App</title>
+  	<link href="../dist/styles.css" rel="stylesheet"></head>
+  <body>
+  	<input type="text" name="input" class="js-test-input"/>
+  	<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  	<script type="text/javascript" src="../dist/jquery.magic.search.js"></script>
+		<script type="text/javascript">
+			$('.js-test-input').magicSearch([
+        {text: 'aaa', value: 'bbb'},
+        {text: 'aaa1', value: 'bbb1'},
+        {text: 'aaa2', value: 'bbb2'},
+        {text: 'aaa3', value: 'bbb3'}
+      ]);
+		</script>
+	</body>
+</html>
