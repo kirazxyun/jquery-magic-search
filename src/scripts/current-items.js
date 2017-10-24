@@ -34,7 +34,7 @@ $.extend(CurrentItems.prototype, {
 	handleDelete: function(e) {
 		var index = $(e.target).parent().index();
 		var item = this.deleteItem(index);
-		this.options.afterDelete.call(this, item);
+		this.options.afterDelete.call(this, index);
 	},
 
 	render: function(data) {
