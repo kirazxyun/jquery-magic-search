@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>组件结构和样式</title>
+  <link rel="stylesheet" type="text/css" href="src/styles/magic-search.css" />
+</head>
+
+<body>
+  <div class="magic-search">
+    <div class="magic-search__inner">
+    	<span class="magic-search__go">
+    		<i>ic</i>
+    	</span>
+      <div class="magic-search__main">
+        <div class="m-search">
+          <div class="m-search__area">
+          	<!-- 已选列表 -->
+          	<div>
+          		<div class="search-current">
+          			<span class="title">状态:</span> 
+          			<span class="content">删除</span> 
+          			<span class="remove">X</span>
+          		</div>
+          	</div>
+
+						<!-- 已选表头 -->
+            <span class="search-selected" style="">姓名:</span>
+            <div class="search-entry">
+              <input placeholder="Click here for filters." class="search-input">
+
+              <!-- 待选列表 -->
+              <ul class="search-ul" style="">
+                <li><a href="javascript:;">姓名</a></li>
+                <li><a href="javascript:;">状态</a></li>
+                <li><a href="javascript:;">是否可见</a></li>
+                <li><a href="javascript:;">最小值</a></li>
+                <li><a href="javascript:;">最大值</a></li>
+              </ul>
+
+              <!-- 待选表字段 -->
+              <div>
+              	<ul class="search-ul">
+              		<li class=""><a href="javascript:;">是</a></li>
+              		<li class=""><a href="javascript:;">否</a></li>
+              	</ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <span title="清空" class="magic-search__clear">
+      	<i>c</i>
+      </span>
+  	</div>
+  </div>
+</body>
+
+</html>

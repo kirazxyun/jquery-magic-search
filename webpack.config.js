@@ -1,4 +1,5 @@
 var path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var webpack = require('webpack');
 
@@ -12,6 +13,11 @@ module.exports = function (options) {
     output: {
       filename: 'jquery.magic.search.js',
       path: resolve('dist')
+    },
+    devtool: 'inline-source-map',
+    devServer: {
+      contentBase: './dist',
+      hot: true
     },
     module: {
       rules: [{
@@ -57,6 +63,10 @@ module.exports = function (options) {
     },
     plugins: [
       new ExtractTextPlugin("styles.css"),
+      new HtmlWebpackPlugin({
+        template: 'index.html'
+      }),
+      new webpack.HotModuleReplacementPlugin()
     ]
   };
 };
